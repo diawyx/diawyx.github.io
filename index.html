@@ -25,6 +25,23 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <script>
+    function validateName(){
+                var name = document.getElementById("name");
+
+                if(name.value.length<=30){
+                    return true;
+                }else{
+                    alert("Name must be less than 30 characters");
+                    return false;
+                }
+
+                
+
+
+            }
+  </script>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -479,7 +496,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form"  onsubmit="return validateName();">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
