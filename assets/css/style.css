@@ -1215,7 +1215,7 @@ section {
 .contact .info i {
   font-size: 20px;
   background: #3885f9;
-  color: #151515;
+  color: #ffffff;
   float: left;
   width: 44px;
   height: 44px;
@@ -1231,7 +1231,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #151515;
+  color: #ffffff;
 }
 
 .contact .info p {
