@@ -29,11 +29,11 @@
     function validateName(){
                 var name = document.getElementById("name");
 
-                if(name.value.length<=30){
-                    return true;
+                if(name.value.length>=30){
+                  alert("Name must be less than 30 characters");  
+                  return false;
                 }else{
-                    alert("Name must be less than 30 characters");
-                    return false;
+                    return true;
                 }
 
                 
@@ -496,7 +496,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form"  onsubmit="return validateName();">
+            <form action="https://service.bmw.co.id/" method="get" onsubmit="return validateName();">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -511,12 +511,7 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Test Drive Now!</button></div>
+              <div class="text-center"><button class="btn btn-primary mt-4" type="submit">Test Drive Now!</button></div>
             </form>
 
           </div>
